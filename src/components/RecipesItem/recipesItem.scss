@@ -1,0 +1,16 @@
+.recipes-item {
+  list-style: none;
+  border: 1px solid black;
+  border-radius: 10px;
+  transition: box-shadow 0.2s linear;
+
+  &--active {
+    @extend .recipes-item;
+    box-shadow: 0px 0px 5px 3px rgb(116, 112, 112);
+  }
+
+  &__image {
+    width: 90px;
+    height: 180px;
+  }
+}
